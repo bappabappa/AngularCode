@@ -1,0 +1,42 @@
+<!-- Toggle Element Using if-else condition  -->
+<h1>Toggle Element </h1>
+<h3 *ngIf="display">hide and show using toggle </h3>
+<button (click)="toggle()">Toggle  click </button>
+
+
+
+
+
+
+
+
+<br><hr>
+<!-- Making a simple form  -->
+<h1 >Making a simple form</h1>
+<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+    <input ngModal  type="text"name="user" placeholder="Enter your name "> <br><br>
+    <input ngModal type="text"name="email" placeholder="Enter your email "> <br><br>
+    <input ngModal type="text"name="password" placeholder="Enter your password "> <br><br>
+    <button>Register First</button>
+    
+</form>
+<ul>
+    <li> {{userData.user}} </li>
+</ul>
+
+
+
+
+
+<br><hr> 
+<!-- header component  -->
+<app-header></app-header>
+
+
+
+
+
+<!-- dynamic binding  -->
+<hr>
+<h1 [style.color]="color"[style.background]="background">{{title}}</h1>
+<button (click)="updateColor()">Update the color</button>
